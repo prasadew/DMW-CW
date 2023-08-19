@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Gallery</title>
+  <style>
+ body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+
+    .image-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 33.33%; /* Adjust to control the size of each image */
+      
+    }
+
+    .image-item img {
+      max-width: 100%;
+      height: auto;
+      cursor: pointer;
+
+    }
+  </style>
+  <script>
+    function openPopup(imageId) {
+      var popup = document.getElementById(imageId + "-popup");
+      popup.classList.add("active");
+    }
+
+    function closePopup(imageId) {
+      var popup = document.getElementById(imageId + "-popup");
+      popup.classList.remove("active");
+    }
+  </script>
+</head>
+<body>
+  <div class="image-row">
+    <div class="image-item">
+      <img src="Images/image1.jpg" alt="Image 1" onclick="window.location.href='BMI-Dashboard/BMI.html'">
+    </div>
+    <div class="image-item">
+      <img src="Images/image2.jpg" alt="Image 2" onclick="window.location.href='Blood-Sugar-level/Blood Sugar cal.html'">
+    </div>
+    <div class="image-item">
+      <img src="Images/image3.jpg" alt="Image 3" onclick="window.location.href='BP/BP1.html'">
+    </div>
+  </div>
+</body>
+</html>

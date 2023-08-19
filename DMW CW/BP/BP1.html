@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="BP-styles.css">
+  <title>Blood Pressure</title>
+</head>
+<body>
+  <form name="BPfrm" method="post" action="BLoodpressure.php" id="BloodPressure">
+    <div class="container-fluid">
+      <h1 class="ex1">Checking Blood Pressure</h1>
+    </div>
+    <div>
+      <table class="center" border="0" cellspacing="1" width="60%" height="30%">
+        <tr class="tr head">
+          <td colspan="2">Enter your Details</td>
+        </tr>
+        <tr height="40px">
+          <td width="55%" align="left" height="25" id="radio" valign="middle">
+            Gender <font color="#ff5500">*</font>
+          </td>
+          <td id="radio1" width="45%" height="25" valign="middle">
+            <label for="male">
+              <input type="radio" value="male" id="male" name="gender" onclick="checkGender();">
+              Male
+            </label>
+            <label for="Female">
+              <input type="radio" value="female" id="female" name="gender" onclick="checkGender();">
+              Female
+            </label>
+          </td>
+        </tr>
+        <tr height="40px">
+          <td width="55%" align="left" height="25" valign="middle">
+            Age <font color="#ff5500">*</font>
+          </td>
+          <td id="age" width="45%" height="25" valign="middle">
+            <label>
+              <input type="text" size="10" name="age" onkeypress="return numeralsOnly(event)" maxlength="2">
+              15-80 years
+            </label>
+          </td>
+        </tr>
+        <tr height="40px">
+          <td width="55%" align="left" height="25" valign="middle">
+            Systolic Pressure / <br>
+            Diastolic Pressure <font color="#ff5500">*</font>
+          </td>
+          <td width="55%" align="left" height="25" valign="middle">
+            <label>
+              <input type="number" name="systolic" id="systolicinput" value min="0" max="999" maxlength="3">
+              /
+              <input type="number" name="diastolic" id="diastolicinput" value min="0" max="999" maxlength="3">
+            </label>
+            (mmHg)
+          </td>
+        </tr>
+        <tr>
+          <br><br>
+          <td colspan="2" align="center" width="100%">
+            <input type="submit" class="flatbtn" value="Submit" id="submission">
+          </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2" height="60px" height="70px">
+            <div id="result">
+                <input type="text" id="resultTextbox" style="width: 60%;" class="textfield">
+              </div>
+            </td>
+        </tr>
+      </table>
+    </div>
+    <br><br><br>
+    <div class="note">
+      <b>Note:</b><br>
+      This calculator is only for people over 15 years of age. <br>
+      Also <font color="#ff5500">*</font> indicates the required fields to be filled.
+    </div>
+    <div id="container">
+        <img src="robot doc.jpg" alt="robot" width="100%" height="200" class="fade">
+        <center><img src="BP1.jpg" alt="chart" id="img2" width="550" height="337"></center>
+    </div>
+  </form>
+  
+  <script src="BPcalculator.js"></script>
+</body>
+</html>

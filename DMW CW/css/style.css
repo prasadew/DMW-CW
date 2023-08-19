@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+/* header section */
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: #013220;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1.5rem 9%;
+    height: 7rem;
+  }
+  
+  .header .navbar a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    margin: 0 1rem;
+    
+  }
+  
+  .header .navbar a:hover {
+    color: #36b184;
+  }
+
+  .header .logo {
+    font-size: 2.0rem;
+    color: #fff;
+    font-weight: bolder;
+    float: left;
+  }
+
+  .header .logo:hover{
+    font-size: 2.0rem;
+    color: #36b184;
+    font-weight: bolder;
+    float: left;
+    text-decoration: none;
+  }
+
+  .header .navbar a {
+    font-size: 1.2rem;
+    color: #fff;
+    display: inline-block;
+    margin: 0 1rem;    
+  }
+
+  /* cover image section */
+    .cover-image {
+      background-image: url(../Images/backimage.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+
+    .cover-image .btn {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 1rem 3rem;
+      font-size: 0.75rem;
+      color: #013220;
+      border: 0.2rem solid #013220;
+      border-radius: 5rem;
+      cursor: pointer;
+      background: none;
+    }
+  
+    .cover-image .btn:hover {
+      background: #013220;
+      color: #fff;
+    }
+    
+    .cover-image h1 {
+      position: absolute;
+      left: 75%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 36px;
+      text-align: justify;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    .cover-image h5 {
+      position: absolute; 
+      left: 75%; 
+      transform: translate(-50%, -50%); 
+      color: black; 
+      font-size: 20px; 
+      text-align: left;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+    .cover-image p {
+      position: absolute; 
+      left: 75%; 
+      transform: translate(-50%, -50%); 
+      color: black; 
+      font-size: 10px; 
+      text-align: center; 
+    }
+    .cover-image a{
+      position: absolute;
+      left: 70%;
+
+    }
+    
+    #search-form {
+      display: flex;
+      align-items: center;
+    }
+    
+    #search-input {
+      width: 200px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    #search-input:focus {
+      outline: none;
+      border-color: #90EE90;
+    }
+    
+    #search-form button {
+      margin-left: 8px;
+      padding: 8px;
+      background-color: #fff;
+      border: none;
+      border-radius: 4px;
+      color: #90EE90;
+      cursor: pointer;
+    }
+    
+    #search-form button:hover {
+      background-color: #36b184;
+      border: #013220;
+      color: #fff;
+    }
+
+    .about{
+      text-align: left;
+      font-size: 3rem;
+      font-weight: 500;
+      margin-bottom: 3rem;
+      font-family: 'Poppins', sans-serif;
+      margin-block-start: 0.83em;
+      margin-block-end: 0em;
+      margin-inline-start: 70px;
+      margin-inline-end: 0px;
+    }
+
+    .about_us{
+
+      margin-block-start: 1em;
+      font-family: 'Poppins', sans-serif;
+      font-size: 13px;
+      color: #333333;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      text-align: justify;
+      
+    }
+
+    .about_box{
+      width: 50%;
+    }
+    
+    .border-line{
+      
+      height: .4rem;
+      width: 50%;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: #90EE90;
+      position: relative;
+      float: left;
+  }
+
+  .img_about{
+    /* height: 50%; */
+    margin-block-start: 6.83em;
+    width: 100%;
+  }
+
+  .banner{
+    background-image: url("../Images/backimage.jpg");
+    
+  }
+
+   .para{
+    font-size: 2.5rem;
+    font-weight: 500;
+    max-width: 600px;
+    text-transform: capitalize;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    color: #013220;
+    text-align: center;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+  }
+
+ 

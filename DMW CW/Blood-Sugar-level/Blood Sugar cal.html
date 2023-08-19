@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Sugar Checker</title>
+  <style>
+    /* Add CSS styles if needed */
+  </style>
+  <link rel="stylesheet" href="BP-styles.css" />
+</head>
+<body>
+  <form name="BSfrm" id="BloodSugar">
+  <div id="container-fluid">
+    <h1 class="ex1">Checking Blood Sugar</h1>
+  </div>
+  <div>
+    <table class="center" border="0" cellspacing="1" width= "60%" height="30%">
+        <tr class="tr head">
+            <td colspan="2">Blood Sugar Calculator</td>
+        </tr>
+        <tr height="40px">
+            <td>
+                Choose Test Type <font color="#ff5500">*</font>
+            </td>
+            <td id="selecttype">
+                <label for="selecttype2">
+                    <select name="test" size="1" onchange="check()" id="ttype">
+                    <option selected value>Select</option>
+                    <option value="Fasting Blood Glucose" name="test">Fasting Blood Glucose</option>
+                    <option value="Random Blood Glucose" name="test">Random Blood Glucose</option>
+                    </select>
+                </label>
+            </td>
+        </tr>
+        <tr height="60px">
+            <td>
+                Select the Blood Glucose Value Type <font color="#ff5500">*</font>
+            </td>
+            <td valign="middle">
+                <label for="bgtypeemg">
+                    <input type="radio" size="10" name="unit" value="mg / dl" onkeypress="checkGtype();" checked="checked">
+                    mg / dl;
+                </label>
+                <label for="bgtypeemmol">
+                  <input type="radio" size="10" name="unit" value="mmol / L" onkeypress="checkGtype();">
+                  mmol / L
+              </label>
+            </td>
+        </tr>
+        <tr height="40px">
+          <td>
+            Enter the Blood Glucose Value <font color="#ff5500">*</font>
+          </td>
+            <td valign="middle" id="value">
+              <label>
+                <input type="text" size="10" name="value" onkeypress="return numeralsOnly(event)" maxlength="3">
+                Value
+            </label>
+            </td>
+        </tr>
+        <tr>
+            <br><br>
+            <td colspan="2" align="center" width="100%">
+                <input type="submit" class="flatbtn" value="Submit" id="submition" onclick="calculateBloodSugar();">
+            </td>
+        </tr>
+        <tr>
+          <td align="center" colspan="2" height="60px" height="70px">
+            <div id="result">
+                <input type="text" id="resultTextbox" style="width: 60%;" class="textfield">
+            </div>
+            </td>
+        </tr>
+
+    </table>
+</div><br><br><br>
+<div class="note">
+  <b>Note:</b><br>
+  This interpretation does not apply if you are pregnant.
+</div><br><br>
+<div id="container" align="center">
+  <!-- <img src="robot doc.jpg" alt="robot" width="100%" height="200" class="fade"> -->
+  <img src="Sugarchart.jpg" alt="chart" id="img3" width="439" height="521">
+
+
+
+</form>
+  <script src="script.js"></script>
+</body>
+</html>

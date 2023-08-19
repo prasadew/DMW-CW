@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet"  href="stylefooter.css">
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function() {
+        $('#footerContainer').load('footer.html');
+      });
+    </script> -->
+</head>
+<body>
+<!-- header section starts  -->
+<header class="header">
+    <a  href="#" class="logo">Health Care</a>
+    <nav class="navbar">
+        <a  href="index.html">home</a>
+        <a  href="BMI-Dashboard/BMI.html" style="transition: 5ms;" id="services">services</a>
+        <a  href="services.html">Contact</a>
+        <a  href="#about">about</a>
+    </nav>
+
+    <script>
+      // Check if the user is logged in
+      var isLoggedIn = false; // Set this to true if the user is logged in
+  
+      // Get the profile link element
+      var profileLink = document.getElementById("services");
+  
+      // Disable the profile link and display a message if the user is not logged in
+      if (!isLoggedIn) {
+        profileLink.addEventListener("click", function(event) {
+          event.preventDefault();
+          alert("Please log in first.");
+        });
+      }
+    </script>
+    
+    <form id="search-form" action="#">
+      <input type="text" id="search-input" placeholder="Search...">
+        <button type="submit" > <img src="Search.png" style=" width: 10px ;height: 10px;"></button>
+          <script>
+            document.getElementById("search-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var searchTerm = document.getElementById("search-input").value;
+            // Perform search or other actions with the searchTerm
+              });
+          </script>
+    </form>
+      
+</header>
+<!-- header section ends -->
+
+<!-- cover section starts -->
+<div class="cover-image">
+    <br><br><br><br>
+    <h1>Your Most Trusted</h1><br><br>
+    <h5>HEALTH PARTNER</h5><br>
+    <h5>The Best Match Services For You</h5><br><br><br>
+    <p>Health Care is designed with a body map to help you understand what your medical symptoms could mean, and provide you with the trusted information you need to help make informed decisions in your life for better health.</p><br>
+    <a  href="login-register-main/login.php" class="btn">Login</a>
+</div>
+<!-- cover section ends -->
+
+<!-- about section starts -->
+<div class="row">
+  <div class="col-8">
+    <div class="about" id="about">
+      <div>
+        <h2 class="about">About Us</h2>
+        <div class = "border-line"></div>
+          <div class="about_box">
+            <p class="about_us">
+              Welcome to VitalCheck, your trusted online health checking platform designed to empower you on your journey to better well-being. At VitalCheck, we understand that maintaining good health is essential for leading a fulfilling life. That's why we've created a user-friendly and comprehensive website to help you take control of your health with ease and convenience. Our mission is to provide you with accurate and reliable health information, allowing you to make informed decisions about your well-being. Whether you're looking to track your fitness progress, monitor specific health parameters, or gain insights into your overall health status, VitalCheck has got you covered.
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-4">
+    <img src="aboutimage.png" alt="" class="img_about">
+  </div>
+</div>
+<!-- about section ends -->
+
+<!-- banner section starts -->
+<div class="banner">
+  <p class="para"><span>"</span>
+    When You Are Young And Healthy, It Never Occurs To You That In A Single Second Your Whole Life Could Change.<Span>"</Span>
+  </p>
+</div>
+<!-- banner section ends -->
+
+<!-- footer section starts -->
+
+<div class="footer-dark">
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                  <h3>Services</h3>
+                  <ul>
+                      <li><a href="#">BMI Checker</a></li>
+                      <li><a href="#">Blood Pressure Checker</a></li>
+                      <li><a href="#">Blood Sugar Checker</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 item">
+                  <h3>About</h3>
+                  <ul>
+                      <li><a href="#">Website</a></li>
+                      <li><a href="#">Technologies</a></li>
+                      <li><a href="#">Developers</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-6 item text">
+                  <h3>Health Care</h3>
+                  <p>Your most trusted health partner<br> <span style="font-size: 12px;">The Best Match Services For You</span></p>
+              </div>
+              <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+          </div>
+          <p class="copyright">Health Care © 2023</p>
+      </div>
+  </footer>
+</div>
+
+<!-- footer section ends -->
+
+
+  
+</body>
+
+</html>

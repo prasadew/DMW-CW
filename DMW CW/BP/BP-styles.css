@@ -1,0 +1,126 @@
+h1{
+    background-color: #187681;
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1.ex1{
+    height: 7rem;
+    padding: 1.5rem 9%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+/*table{
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+}*/
+table{
+    background: #ebf3f4;
+    border: 1px solid #eee;
+    border-collapse: separate;
+    /*border-radius: 10px;*/
+    border-bottom: 2px solid #187681;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1), 0 10px 20px rgba(0, 0, 0, .05),
+    0 20px 20px rgba(0, 0, 0, .05), 0 30px 20px rgba(0, 0, 0, .05);
+}
+table.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.tr.head{
+    background-color: #187681;
+    color: #fff;
+    text-align: left;
+}
+
+.flatbtn{
+    background-color: #187681;
+    border: 0;
+    border-radius: 4px;
+    font-size: 1.105rem;
+    line-height: 1;
+    padding: 0.65rem 1.2rem;
+    color: #fff;
+    margin: 10px;
+}
+
+.note{
+    text-align: center;
+}
+
+.fade{
+   opacity: 0.5;
+   width: 100%;
+   height: auto;
+   filter: blur(4px);
+}
+
+#container{
+    position: relative;
+}
+
+#img2{
+    line-height: 35px;
+    color: #404040;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    /* padding: auto; */
+
+}
+
+/* select {
+    writing-mode: horizontal-tb !important;
+  
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    box-sizing: border-box;
+} */
+
+#img3{
+    line-height: 35px;
+    color: #404040;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.textfield{
+    font-family: 'Poppins', sans-serif;
+}
